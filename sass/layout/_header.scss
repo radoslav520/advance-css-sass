@@ -1,0 +1,35 @@
+.header{
+    height: 95vh;
+    background-image:linear-gradient(  /*da ide svetlo zeleno ka tamno zelenom */
+         to right bottom,
+        rgba($color-primary-light,0.8),
+        rgba($color-primary-dark,0.8)),
+        url(../img/hero.jpg);
+    background-size: cover;
+    background-position: top; /*da kad respon stranicu ide ka topu, top bude gfix*/
+    clip-path: polygon(0 0,100% 0,100% 75vh, 0 100%); /*zakrivljen div*/
+    position: relative;
+
+
+    &__logo-box{
+        position: absolute;
+        top: 4rem;
+        left: 4rem;
+        }
+        
+    &__logo{
+        
+            height: 3.5rem;
+            
+        }
+        
+        
+    &__box-text{
+            position: absolute;
+            top:40% ;
+            left:50%;
+            transform: translate(-50%,-50%);  /* function repositions an element in the horizontal and/or vertical*/
+            text-align: center;
+        }
+    
+}

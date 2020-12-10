@@ -1,0 +1,37 @@
+.feature-box{
+    background-color: rgba($color-white, .8);
+    font-size: 1.5rem;
+    padding: 2.5rem;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .15)  ;
+    transition: transform .3s;
+
+    
+
+    &__icon{
+
+        font-size: 6rem;
+        margin-bottom: .5rem;
+        display: inline-block; //da ne bude preko celog diva pozadina nego samo kolko je i text
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark,);
+    -webkit-background-clip: text; //da zelena pozadina bude na text
+    color: transparent;
+
+
+        
+
+    }
+
+    &:hover{
+        transform: translateY(-1rem) scale(1.04);
+    }
+    
+    &__picture{
+        &--1{
+            background-image: url(../img);
+        }
+    }
+
+    
+}
